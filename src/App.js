@@ -1,14 +1,16 @@
-import React from 'react'
-// import Xcountries from './Components/XCountries'
-import XStopWatch from './Components/XStopwatch'
+import React from "react";
+import Xcountries from "./Components/XCountries";
+import XStopWatch from "./Components/XStopwatch";
+import Sample from "./Components/Sample";
 
 const App = () => {
   return (
-    <div>
+    <>
       {/* <Xcountries/> */}
       <XStopWatch/>
-    </div>
-  )
+      {/* <Sample/> */}
+    </>
+  );
 }
 
-export default App
+export default App;

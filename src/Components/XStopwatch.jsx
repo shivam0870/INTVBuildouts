@@ -8,17 +8,17 @@ function XStopWatch() {
     const [name, setName] = useState("Start");
 
     const onclk = () => {
-        if(name == "Start"){
+        if(name === "Start"){
             setName("Stop");
             const id = setInterval(() => {
                 setSec((prevSec) => {
-                    if(prevSec < 60){
+                    if(prevSec < 59){
                         return prevSec + 1;
                     }else{
                         setMin((prevMin) => prevMin + 1);
                         return 0;
                     }
-                })
+                });
             }, 1000);
 
             setIntervalId(id);
@@ -40,8 +40,8 @@ function XStopWatch() {
             <h1>Stopwatch</h1>
             Time: {min}:{sec <= 9 ? `0${sec}` : sec}
             <br/>
-            <button type="button" className = "btn btn-primary mt-2" onClick={onclk} >{name}</button>
-            <button type="button" className = 'btn btn-primary mt-2 mx-2' onClick={reset}>Reset</button>
+            <button type="button" className="btn btn-primary mt-2" onClick={onclk} >{name}</button>
+            <button type="button" className="btn btn-primary mt-2 mx-2" onClick={reset}>Reset</button>
         </>
     );
 }
