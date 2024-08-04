@@ -8,7 +8,7 @@ const App = () => {
     <>
       {/* <Xcountries/> */}
       <XStopWatch/>
-      {/* <Sample/> */}
+      
     </>
   );
 }
