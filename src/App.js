@@ -1,10 +1,12 @@
 import React from 'react'
-import Xcountries from './Components/XCountries'
+// import Xcountries from './Components/XCountries'
+import XStopWatch from './Components/XStopwatch'
 
 const App = () => {
   return (
     <div>
-      <Xcountries/>
+      {/* <Xcountries/> */}
+      <XStopWatch/>
     </div>
   )
 }
