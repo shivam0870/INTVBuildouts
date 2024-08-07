@@ -4,6 +4,7 @@ import XStopWatch from "./Components/XStopwatch";
 import Sample from "./Components/Sample";
 import XDisplayName from "./Components/XDisplayName";
 import XCounter from "./Components/XCounter";
+import XCalculator from "./Components/XCalculator";
 
 const App = () => {
   return (
@@ -11,7 +12,8 @@ const App = () => {
       {/* <Xcountries/> */}
       {/* <XStopWatch/> */}
       {/* <XDisplayName/> */}
-      <XCounter/>
+      {/* <XCounter/> */}
+      <XCalculator/>
     </>
   );
 }

@@ -1,0 +1,13 @@
+button{
+    padding : 15px 20px;
+    margin : 4px;
+    border-radius: 6px;
+}
+
+.class_maindiv{
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
